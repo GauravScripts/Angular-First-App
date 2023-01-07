@@ -1,0 +1,29 @@
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select
+        panelClass="sort-select"
+        [(ngModel)]="sort">
+    <mat-option value="name">Name</mat-option>
+    <mat-option value ="-released">Released</mat-option>
+    <mat-option value="-added">Added</mat-option>
+    <mat-option value ="-created">Created</mat-option>
+    <mat-option value ="-updated">Updated</mat-option>
+    <mat-option value ="-rating">Rating</mat-option>
+    <mat-option value="matacritic">Metacritic</mat-option>
+    </mat-select>
+    </mat-form-field>
+</div>
+<div class="games">
+    <div class="game">
+        <div class="game-thumb-container">
+            <img src="https://wallpapercave.com/wp/wp7434606.jpg" alt="thumbnail" class="game-thumbnail">
+        </div>
+        <div class="game-description">
+            <p class="game-name">Name</p>
+            <div class="game-platforms">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/5e777b100488101.5f0a1da32a03f.jpg" alt="slug" class="game-platform">
+            </div>
+        </div>
+    </div>
+</div>
